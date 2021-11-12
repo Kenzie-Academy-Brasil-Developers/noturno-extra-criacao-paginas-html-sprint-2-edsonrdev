@@ -1,1 +1,173 @@
-/* FOLHA DE ESTILO DA PAGINA DE RECEITAS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, div, main, section, h1, h2, h3, p {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   background-image: url(./img/back.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+}
+
+.container {
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0 16px;
+   /* background-color: pink; */
+}
+
+.full-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* NAVBAR ------------------------------------------------------ */
+
+.navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   padding: 12px 0;
+
+   background-color: #000;
+}
+
+.navbar .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar img {
+   height: 32px;
+   vertical-align: middle;
+}
+
+.menu-food {
+   margin: 0;
+   padding: 0;
+
+   display: flex;
+
+   list-style: none;
+}
+
+.menu-food li:not(:first-child) {
+   margin-left: 14px;
+}
+
+.menu-food a {
+   height: inherit;
+   color: #ee896a;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 600;
+   transition: all .4s;
+   border: 1px solid;
+   border-radius: 10px 0 10px 0;
+   padding: 7px 13px;
+}
+
+.menu-food a:hover {
+   transition: all .4s;
+   border-color: rgba(247, 82, 33, 0.15);
+   background-color: rgba(247, 82, 33, 0.15);
+}
+
+/* WELCOME SECTION --------------------------------------------- */
+
+.welcome {
+   width: 100%;
+   height: 100vh;
+
+   display: flex;
+
+   background-color: rgba(0, 0, 0, .75);
+
+   color: #fff;
+   font-family: 'Montserrat Alternates', sans-serif;
+   text-align: center;
+}
+
+.welcome .container {
+   flex-direction: column;
+}
+
+.welcome h1 {
+   margin-bottom: 24px;
+   font-size: 56px;
+}
+
+.welcome p {
+   font-size: 28px;
+   line-height: 1.5;
+   font-weight: 200;
+}
+
+.welcome span {
+   color: #cb4921;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+/* MENU SECTION ------------------------------------------------ */
+
+.menu {
+   background-color: #f1f1f1;
+   padding: 70px 0;
+   text-align: center;
+}
+
+.menu h2 {
+   font-size: 32px;
+   margin: 0;
+}
+
+.menu p {
+   font-size: 18px;
+   margin: 22px auto 36px auto;
+}
+
+.foods {
+   padding: 0;
+   list-style: none;
+   column-count: 3;
+}
+
+.foods .food {
+   padding: 0;
+   text-align: center;
+}
+
+.foods figure {
+   margin: 0;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.foods img {
+   max-width: 100%;
+   margin-bottom: 9px;
+}
+
+.foods figcaption {
+   font-size: 13px;
+}
+
+.foods a:link {
+   color: #44c7c7;
+   font-size: 16px;
+}
+
+.foods a:visited {
+   color: #aa4cbd;
+}

@@ -1,1 +1,179 @@
-/* FOLHA DE ESTILO DA PAGINA DE JORNAL */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,700&display=swap');
+.container {
+   width: 960px;
+   margin: 0 auto;
+}
+.clearfix::after, .clearfix::before {
+	content: '';
+	display: table;
+   clear: both;
+}
+body, header, nav, ul, main, section, figure, img, figcaption, article, aside, footer, div {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Nunito Sans', sans-serif;
+   background-color: #f2f2f2;
+   color: #555;
+}
+header {
+   text-align: center;  
+}
+header h1 {
+   margin: 18px 0 0 0;
+}
+header img {
+   width: 280px;
+   height: 25px;
+   vertical-align: middle;
+}
+header h2 {
+   color: #333;
+   font-size: 11px;
+   font-weight: 600;
+   margin: 12px 0 3px 0;
+   text-transform: uppercase;
+}
+header nav {
+   margin-top: 18px;
+   padding: 12px;
+   border-top: 1px solid #ddd;
+   font-family: 'Noto Serif', serif;
+   border-bottom: 3.5px double #ccc;
+}
+header ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+}
+header li {
+   margin: 0 12px;
+}
+header a {
+   display: block;
+   text-transform: uppercase;
+   color:inherit;
+   text-decoration: none;
+   font-size: 12px;
+   letter-spacing: 1px;
+   border-bottom: 1px solid transparent;
+}
+header a:hover {
+   border-color: #888;
+}
+.content {
+   width: 72%;
+   float: left;
+   padding-right: 12px;
+}
+.headline {
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #ddd;
+}
+.headline h3 {
+   font-size: 22px;
+   text-align: justify;
+   font-weight: 900;
+}
+.headline p {
+   font-size: 14px;
+   text-align: justify;
+}
+.headline figure {
+   width: 100%;
+   margin: 0;
+   padding: 8px 8px 4px 8px;
+   background-color: #fff;
+   border: 1px solid #eee;
+   text-align: center;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, .1);
+}
+.headline img {
+   max-width: 100%;
+   vertical-align: middle;
+}
+.headline figcaption {
+   font-size: 12px;
+   text-align: center;
+   padding: 3px 0 0 0;
+}
+.headline .read-more {
+   padding: 8px 12px;
+   color: #fff;
+   font-weight: 700;
+   text-shadow: 0 1px 2px rgba(0, 0, 0, .9);
+   color: rgb(255, 255, 255);
+   padding: 9px 13px 7px;
+   background-color: #567b95;
+   border: 1px solid #40627a;
+   font-size: 13px;
+}
+.headline .read-more:hover {
+   background-color: #326891;
+}
+.posts {
+   column-count: 2;
+   column-gap: 24px;
+}
+.post {
+   border: 1px dotted #ddd;
+   padding: 12px;
+   margin-bottom: 24px;
+   background-color: #f8f8f8;
+}
+.post img {
+   width: 100%;
+}
+.post h3 {
+   margin: 5px 0;
+   font-weight: 900;
+   font-size: 16px;
+   text-align: justify;
+}
+.post .time {
+   font-size: 11px;
+   font-weight: 600;
+   font-style: italic;
+}
+.post p {
+   text-align: justify;
+   font-size: 12px;
+}
+.side {
+   width: 28%;
+   float: left;
+   padding-left: 12px;
+}
+.side h2 {
+   border-bottom: 3.5px double #ccc;
+}
+.side ul {
+   padding: 0;
+   list-style: none;
+   font-family: 'Noto Serif', serif;
+   display: flex;
+   flex-direction: column;
+}
+.side li:not(:last-of-type) {
+   border-bottom: 1px dotted #aaa;
+}
+.side a {
+   display: block;
+   text-decoration: none;
+   color: #003330;
+   font-weight: 600;
+   font-size: 13px;
+   padding: 10px 0;
+   text-align: justify;
+}
+footer {
+   border-top: 1px solid #ddd;
+   font-size: 10px;
+   padding-top: 16px;
+   padding-bottom: 32px;
+}
